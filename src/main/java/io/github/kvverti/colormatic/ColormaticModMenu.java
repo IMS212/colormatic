@@ -24,9 +24,8 @@ package io.github.kvverti.colormatic;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 
-public class ColormaticModMenu implements ModMenuApi {
-      @Override
+@Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return ColormaticConfig::new;
+        return parent -> ColormaticConfigController.getConfigScreen(Colormatic.config(), parent);
     }
 }
