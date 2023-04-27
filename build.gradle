@@ -9,8 +9,8 @@ repositories {
 	maven { url = 'https://api.modrinth.com/maven' }
 }
 
-sourceCompatibility = JavaVersion.VERSION_20
-targetCompatibility = JavaVersion.VERSION_20
+sourceCompatibility = JavaVersion.VERSION_19
+targetCompatibility = JavaVersion.VERSION_19
 
 archivesBaseName = project.archives_base_name
 version = "${project.mod_version}+mc.${project.minecraft_version}"
