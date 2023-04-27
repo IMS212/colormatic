@@ -28,6 +28,6 @@ public class ColormaticModMenu implements ModMenuApi {
 
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return parent -> ColormaticConfigController.getConfigScreen(Colormatic.config(), parent);
+        return parent -> ColormaticConfigController.getProvidedConfigScreenFactories(Colormatic.config(), parent);
     }
 }
