@@ -25,9 +25,8 @@ import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 
 public class ColormaticModMenu implements ModMenuApi {
-
-    @Override
+      @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return parent -> ColormaticConfigController.getProvidedConfigScreenFactories(Colormatic.config(), parent);
+        return ColormaticConfig::new;
     }
 }
